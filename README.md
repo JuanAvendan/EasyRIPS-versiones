@@ -53,19 +53,19 @@ Descargue la última versión en [Releases](https://github.com/JuanAvendan/EasyR
 
 | Archivo | Para qué |
 |---|---|
-| `RIPSLaboratorioClinico-win-Setup.exe` | **Instalador (recomendado).** Instala solo para su usuario de Windows, sin pedir permisos de administrador, y crea accesos directos en el escritorio y en el menú Inicio. Se desinstala desde *Configuración › Aplicaciones* |
-| `RIPSLaboratorioClinico-win-Portable.zip` | **Versión portable.** Se descomprime en cualquier carpeta (o en una USB) y se abre desde ahí, sin instalar |
+| `EasyRIPS-win-Setup.exe` | **Instalador (recomendado).** Instala solo para su usuario de Windows, sin pedir permisos de administrador, y crea accesos directos en el escritorio y en el menú Inicio. Se desinstala desde *Configuración › Aplicaciones* |
+| `EasyRIPS-win-Portable.zip` | **Versión portable.** Se descomprime en cualquier carpeta (o en una USB) y se abre desde ahí, sin instalar |
 | `SHA256SUMS.txt` | La huella de cada archivo, para comprobar que no se alteró |
 | `*.nupkg`, `releases.win.json`, `RELEASES` | Paquetes que usa la app para actualizarse. No hay que descargarlos |
 
-Los archivos conservan el nombre anterior de la app (`RIPSLaboratorioClinico`). Así las copias instaladas siguen reconociendo sus actualizaciones.
+Las versiones publicadas antes del cambio de nombre traen el instalador y la portable como `RIPSLaboratorioClinico-win-Setup.exe` y `RIPSLaboratorioClinico-win-Portable.zip`: son los mismos archivos. Los paquetes de actualización conservan ese nombre, y así las copias instaladas siguen reconociendo sus actualizaciones.
 
 ### Comprobar la descarga
 
 Si Windows muestra un aviso al abrir el instalador, compruebe antes su huella. En PowerShell, en la carpeta donde lo descargó:
 
 ```powershell
-Get-FileHash .\RIPSLaboratorioClinico-win-Setup.exe -Algorithm SHA256
+Get-FileHash .\EasyRIPS-win-Setup.exe -Algorithm SHA256
 ```
 
 El resultado debe ser igual al que aparece para ese archivo en `SHA256SUMS.txt` del mismo release. Si no coincide, no lo ejecute.
