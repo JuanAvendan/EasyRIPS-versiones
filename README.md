@@ -4,7 +4,9 @@ Aplicación de escritorio para Windows con la que los prestadores de servicios d
 
 Este repositorio solo publica los instaladores y las actualizaciones. El código está en un repositorio privado.
 
-> Hasta la versión 2.5 se llamaba **RIPS Laboratorio Clínico**. Las copias ya instaladas se actualizan solas, sin reinstalar.
+> Hasta la versión 2.5 se llamaba **RIPS Laboratorio Clínico**.
+>
+> **Si tiene instalada la versión 2.6 o una anterior:** desinstálela desde *Configuración › Aplicaciones* e instale la última con `EasyRIPS-win-Setup.exe`. Desde la 2.7 la app tiene un identificador de instalación nuevo y esas copias ya no se actualizan solas. Es una sola vez: sus datos están en la nube y sus preferencias se conservan.
 
 ## Para quién es
 
@@ -58,7 +60,7 @@ Descargue la última versión en [Releases](https://github.com/JuanAvendan/EasyR
 | `SHA256SUMS.txt` | La huella de cada archivo, para comprobar que no se alteró |
 | `*.nupkg`, `releases.win.json`, `RELEASES` | Paquetes que usa la app para actualizarse. No hay que descargarlos |
 
-Las versiones publicadas antes del cambio de nombre traen el instalador y la portable como `RIPSLaboratorioClinico-win-Setup.exe` y `RIPSLaboratorioClinico-win-Portable.zip`: son los mismos archivos. Los paquetes de actualización conservan ese nombre, y así las copias instaladas siguen reconociendo sus actualizaciones.
+Las versiones hasta la 2.6 tienen sus archivos con el nombre anterior (`RIPSLaboratorioClinico-…`).
 
 ### Comprobar la descarga
 
